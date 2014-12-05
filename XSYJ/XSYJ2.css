@@ -1,0 +1,38 @@
+@charset "utf-8";
+#top_index {
+	height: 20px;
+	width: auto;
+	margin-bottom:8px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+#top_index a:link,#top_index a:visited,#top_index a:hover,#top_index a:active{
+	color:#000;
+	text-decoration:none;
+}
+
+#title{
+	margin-top:18px;
+	text-align:center;
+	font-size:24px;
+	font-family:"楷体", "宋体";
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+#zuobing {
+	margin-left:auto;
+	margin-right:auto;
+	width:260px;
+	height:auto;
+}
+
+#baojigang {
+	margin-left:auto;
+	margin-right:auto;
+	width:200px;
+	height:auto;
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#top_index {
+	border:#000 solid 1px;
+	height:20px;
+}
+
+#top_index a{
+	color:#000;
+	text-decoration:none;
+}
+
+#main_content {
+	margin-top:31px;
+	border:#999 solid 1px;
+	height:auto;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+#main_content a{
+	text-decoration:none;
+	color:#333;
+}

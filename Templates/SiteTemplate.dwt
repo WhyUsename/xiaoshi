@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>模板</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link href="../css_template.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="margin:0px" background="../TemplatesImages/index1.png">
+<!--顶部信息区，包含校史馆标题和中山大学标志-->
+  <div id="top_information">
+    <!--<div id="top_player">
+  <audio controls="console/stopbuttom" autoplay="true" loop="loop">
+   <source src="../SYSU.mp3" type="audio/mpeg">
+  </audio></div>-->
+</div>
+<!--导行模板区-->
+     <div id="navplace">
+	   <ul>
+          <li><a href="../index/index.html" target="_self"><b>校史首页</b></a></li>
+          <li><a href="../GYZZ/GYZZ1.html" target="_self"><b>关于中珠</b></a></li>
+          <li><a href="../ZZJT/ZZJT1.html" target="_self"><b>中珠讲坛</b></a></li>
+          <li><a href="../XSYJ/XSYJ1.html" target="_self"><b>学术研究</b></a></li>
+          <li><a href="../RWYS/RWYS0.html" target="_self"><b>人物轶事</b></a></li>
+          <li><b>中珠论坛</b></li>
+       </ul>
+     </div>
+ <!--主要内容区-->
+  <div id="mastercontent">
+  <!-- TemplateBeginEditable name="contentarea" -->内容区域，大小可调<!-- TemplateEndEditable -->
+  </div> 
+  <div style="clear:both;"></div>
+ <!--页脚区-->
+  <div id="footer">
+  	 <div id="footer_border"><img src="../TemplatesImages/footer_border.png" alt="页脚边框"></div>
+     <p></p>
+     <div id="linkbar">
+        <ul class="nav">
+         <li>相关链接：</li>
+         <li><a href="../index/index.html">首页</a>|<li>
+         <li><a href="http://www.sysu.edu.cn/" target="_blank">中山大学</a>|</li>
+         <li><a href="http://zhuhai.sysu.edu.cn/" target="_blank">中山大学珠海校区</a></li>
+        </ul>
+  	 </div>
+   <p>Copyright &copy; 2013 ZZXS Studio in SYSU .All rights reserved. </p><br />
+  </div> 
+</body>
+</html>

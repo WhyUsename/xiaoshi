@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+#top_nav{
+	height:auto;
+	margin-bottom:4px;
+	width:auto;
+}
+
+#top_nav a{
+	text-decoration:none;
+	color:#000;
+}
+
+#v1 {
+	height: auto;
+	width: 600px;
+	padding-left:40px;
+	float:left;
+}
+
+#introduce{
+	float:left;
+	width:200px;
+	margin:0 0 0 0;
+	height:auto;
+}
+
+#vedio_list{
+	height:auto;
+	width:850px;
+}
+
+#list_1{
+	margin-top:8px;
+	margin-left:18px;
+	margin-right:18px;
+	height:auto;
+	width:120px;
+	text-align:center;
+	float:left;
+}
+
+#vedio_list a{
+	text-decoration:none;
+	color:#000;
+}
+
+#list_2{
+	margin-top:8px;
+	margin-left:18px;
+	margin-right:18px;
+	height:auto;
+	width:120px;
+	text-align:center;
+	float:left;
+}

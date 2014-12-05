@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*顶部位置信息*/
+#top-index {
+	float:none;
+	height:auto;
+	width:auto;
+	margin:0px auto;
+	margin-bottom:10px;
+	font-size:16px;
+	border:1px solid #000;
+}
+
+#top-index a{
+	color:#003;
+	text-decoration:none;
+}
+
+/*子导航条样式*/
+#subnav {
+	float:none;
+	height:auto;
+	width: auto;
+	margin:0px auto;
+	margin-bottom:10px;
+	padding:0px;
+	border:1px solid;
+}
+
+#subnav ul{
+	text-align:center;
+	padding:0px;
+	margin:0px;
+}
+
+#subnav ul li{
+	display:inline;
+	padding:0px 8px 0px 8px;
+}
+
+#subnav a:link,a:visited,a:hover,a:active{
+	color:#000;
+	text-decoration:none;
+}
+
+/*内容区域样式*/
+#content_area{
+	width:auto;
+	height:auto;
+}
+
+#left_nav{
+	width:130px;
+	height:auto;
+	float:left;
+	margin:0px 0px 0px 0px;
+}
+
+#left_nav ul li{
+	text-align:start;
+	padding-bottom:8px;
+}
+
+#left_nav a{
+	color:#000;
+	text-decoration:none;
+}
+
+#content{
+	width:660px;
+	height:auto;
+	float:left;
+	margin-left:3px;
+	margin-bottom:0px;
+	margin-right:3px;
+	margin-top:1px;
+}
+
+#title{
+	width:auto;
+	height:auto;
+	text-align:center;
+	margin-top:8px;
+	font-size:24px;
+	font-family:"楷体", "宋体";
+}
+
+#img1{
+	width:600px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}

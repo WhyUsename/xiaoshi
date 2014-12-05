@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/SiteTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>校史首页</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<link href="index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+  function imageRotater(id){
+    var cases = "",
+    album = document.getElementById(id),
+    images = album.getElementsByTagName("img"),
+    links = album.getElementsByTagName("a"),
+    dt = album.getElementsByTagName("dt")[0],
+    length = images.length,
+    aIndex = 1,
+    aBefore = length;
+    for(var i=0;i< length;i++){
+      cases += images[i].id + ':"'+images[i].getAttribute("src")+'",'
+    }
+    images[0].style.cssText = "position:absolute;top:0;left:0;";//修正图片的位置错误问题
+    var tip = document.createElement("dd");
+    tip.style.cssText = "position:absolute;bottom:0;height:20px;width:380px;padding:10px;color:#fff;background:#fff;";
+    album.insertBefore(tip,dt.nextSibling);
+    if(!+"\v1"){
+      tip.style.color = "#369";
+      tip.style.filter = "alpha(opacity=67)"
+    }else{
+      tip.style.cssText += "background: rgba(164, 173, 183, .65);"
+    }
+    cases = eval("({"+cases.replace(/,$/,"")+"})"); //相当于switch-case代码块
+    for(var i=0;i<length;i++){ //实现点击切换图片
+      links[i].onclick = function(e){
+        e =e || window.event;
+        var index = this.toString().split("#")[1];
+        aIndex = index.substr(-1);
+        images[0].src = cases[index];
+        tip.innerHTML = images[aIndex -1].getAttribute("alt");
+          !+"\v1" ?(e.returnValue = false) :(e.preventDefault());
+      }
+    }
+    var prefix = images[0].id.substr(0,images[0].id.length -1);
+    (function(){//实现自动轮换图片
+      setTimeout(function(){
+        if(aIndex > length){
+          aIndex = 1;
+        }
+        images[0].src = cases[prefix+aIndex];
+        tip.innerHTML = images[aIndex -1].getAttribute("alt");
+        tip.style.bottom = "-40px";
+        links[aBefore-1].className = "";
+        links[aIndex-1].className = "hover";
+        aBefore = aIndex;
+        aIndex++;
+        move(tip);
+        setTimeout(arguments.callee,1500)
+      },1500)
+    })()
+
+    var move = function(el){
+      var begin = parseFloat(el.style.bottom),
+      speed = 1;
+      el.bottom = begin;
+      (function(){
+        setTimeout(function(){
+          el.style.bottom = el.bottom + speed + "px";//移动
+          el.bottom += speed;
+          speed *= 1.5;//下一次移动的距离
+          if(el.bottom >= 0){
+            el.style.bottom = "0px";
+          }else{
+            setTimeout(arguments.callee,25);//每移动一次停留25毫秒
+          }
+        },25)
+      })()
+    }
+  }
+  window.onload = function(){
+    try{document.execCommand("BackgroundImageCache", false, true);}catch(e){};
+    imageRotater("album");
+  }
+
+</script>
+<!-- InstanceEndEditable -->
+<link href="../css_template.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="margin:0px" background="../TemplatesImages/index1.png">
+<!--顶部信息区，包含校史馆标题和中山大学标志-->
+  <div id="top_information">
+    <!--<div id="top_player">
+  <audio controls="console/stopbuttom" autoplay="true" loop="loop">
+   <source src="../SYSU.mp3" type="audio/mpeg">
+  </audio></div>-->
+</div>
+<!--导行模板区-->
+     <div id="navplace">
+	   <ul>
+          <li><a href="index.html" target="_self"><b>校史首页</b></a></li>
+          <li><a href="../GYZZ/GYZZ1.html" target="_self"><b>关于中珠</b></a></li>
+          <li><a href="../ZZJT/ZZJT1.html" target="_self"><b>中珠讲坛</b></a></li>
+          <li><a href="../XSYJ/XSYJ1.html" target="_self"><b>学术研究</b></a></li>
+          <li><a href="../RWYS/RWYS0.html" target="_self"><b>人物轶事</b></a></li>
+          <li><b>中珠论坛</b></li>
+       </ul>
+     </div>
+ <!--主要内容区-->
+  <div id="mastercontent">
+  <!-- InstanceBeginEditable name="contentarea" -->
+    <div id="picture">
+      <dl id="album">
+        <dt> <img id="index1" alt="教学楼隐湖" src="images/教学楼隐湖.jpg" /> <img id="index2" alt="榕园宿舍楼" src="images/榕园宿舍.jpg" /> <img id="index3" alt="图书馆" src="images/图书馆.jpg" /> <img id="index4" alt="惜亭" src="images/惜亭.jpg" /> <img id="index5" alt="校训石" src="images/校训石.jpg" /> </dt>
+        <dd> <a href="#index1">1</a> <a href="#index2">2</a> <a href="#index3">3</a> <a href="#index4">4</a> <a href="#index5">5</a> </dd>
+      </dl>
+    </div>
+    <div id="GYZZ">
+      <div id="GYZZ_content">
+       <div id="img"><img src="images/gyzz.png" width="102" height="103" /></div> 
+	   <div id="new"><a href="../GYZZ/GYZZ1.html" target="_self">&#8226;校区纵览</a><hr /><a href="../GYZZ/GYZZ2.html" target="_self">&#8226;校区掠影</a><hr /><a href="../GYZZ/GYZZ9_1.html" target="_self">&#8226;你所不知道的中珠</a>
+       </div>   
+      </div>
+    </div>
+  <div id="ZZJT">
+     <div id="ZZJT_content">
+      <div id="img"><img src="images/zzjt.png" width="102" height="103" /></div>
+      <div id="new"><a href="../ZZJT/ZZJT1.html" target="_self">&#8226;岭南星空下</a><hr /><a href="../ZZJT/ZZJT2.html" target="_self">&#8226;庆祝珠海校区建立10周年视屏</a><hr />&#8226;&nbsp;
+      </div>
+     </div>
+    </div>
+  <div id="XSYJ">
+     <div id="XSYJ_content">
+      <div id="img"><img src="images/xsyj.png" width="102" height="103" /></div>
+      <div id="new"><a href="../XSYJ/XSYJ2.html" target="_self">&#8226;旅游学院教师左冰、保继刚获得2013《旅游学刊》最有影响力论文大奖</a><hr /><a href="../XSYJ/XSYJ3.html" target="_self">&#8226;许宁生校长带队访问国家海洋局</a><hr /><a href="../XSYJ/XSYJ4.html" target="_self">&#8226;“智能电网移动应用创新实验室”签约暨“科腾杯”中山大学移动应用创新设计大赛启动仪式成功举行</a>
+      </div>
+     </div>
+    </div>  
+    <div id="RWYS">
+     <div id="RWYS_content">
+      <div id="img"><img src="images/rwys.png" width="102" height="103" /></div>
+      <div id="new"><a href="../RWYS/RWYS1.html" target="_self">&#8226;中山大学珠海校区摭名记</a><hr /><a href="../RWYS/RWYS2.html" target="_self">&#8226;珠海校区五记</a><hr /><a href="../RWYS/RWYS4.html" target="_self">&#8226;醉时歌</a>
+      </div>
+     </div>
+    </div> 
+  <!-- InstanceEndEditable -->
+  </div> 
+  <div style="clear:both;"></div>
+ <!--页脚区-->
+  <div id="footer">
+  	 <div id="footer_border"><img src="../TemplatesImages/footer_border.png" alt="页脚边框"></div>
+     <p></p>
+     <div id="linkbar">
+        <ul class="nav">
+         <li>相关链接：</li>
+         <li><a href="index.html">首页</a>|<li>
+         <li><a href="http://www.sysu.edu.cn/" target="_blank">中山大学</a>|</li>
+         <li><a href="http://zhuhai.sysu.edu.cn/" target="_blank">中山大学珠海校区</a></li>
+        </ul>
+  	 </div>
+   <p>Copyright &copy; 2013 ZZXS Studio in SYSU. All rights reserved. </p><br />
+  </div> 
+</body>
+<!-- InstanceEnd --></html>

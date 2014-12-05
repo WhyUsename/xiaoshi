@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*顶部信息区的样式*/
+#top_information {
+	height:180px;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	width:850px;
+	background:url(TemplatesImages/LOGO.png);
+}
+
+#top_player{
+	float:left;
+	height:180px;
+	width:535px;
+}
+
+#top_player audio{
+	margin-left:235px;
+}
+
+/*导航区域样式*/
+#navplace {
+	margin:0px auto;
+	width:900px;
+	position:relative;
+	height:40px;
+}
+
+/*导航内部字体样式*/
+#navplace ul {
+	color:#000;
+	font-size:23px;
+	font-family:"华文行楷", "华文楷体", "楷体", "宋体";
+}
+
+#navplace ul li {
+	display:inline;
+	margin:auto;
+}
+
+#navplace ul li a{
+	padding:7px 40px 7px 3px;
+	color:#000;	
+}
+
+#navplace a:hover{
+	padding:7px 40px 7px 3px;
+	background:url(TemplatesImages/nav_hover.png);
+	color:#FFF;
+}
+
+#navplace a{
+	text-decoration:none;
+}
+
+/*主要内容区域样式*/
+#mastercontent {
+	margin:0px auto;
+	margin-bottom:8px;
+	width:850px;
+	height:auto;
+	line-height:24px;
+}
+
+/*页脚样式*/
+#footer {
+	height:auto;
+	margin-top:49px;
+	margin-left:auto;
+	margin-right:auto;
+	width:800px;
+}
+
+#footer a{
+	text-decoration:none;
+}
+
+#footer p{
+	text-align:center;
+	font-size:14px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#999;
+}
+
+/*页脚链接的ul和il的样式*/
+#linkbar .nav{
+    text-align:center;
+	margin-top:0px;
+}
+
+#linkbar .nav li {
+	display:inline;
+	font-size:16px;
+    color:#999;
+}
+
+/*导航链接样式*/
+#linkbar .nav li a {
+	color:#999;
+	padding:0 20px 0 20px;
+}

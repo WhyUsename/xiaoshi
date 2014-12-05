@@ -1,0 +1,46 @@
+﻿@charset "utf-8";
+#left_nav {
+	float: left;
+	height: auto;
+	width: 120px;
+	margin:0px 0px 0px px;
+}
+
+#left_nav li{
+	padding-bottom:8px;
+}
+
+#left_nav a{
+	color:#000;
+	text-decoration:none;
+}
+
+#right_content {
+	margin-left:31px;
+	float:left;
+	height:auto;
+	width:600px;
+}
+
+#top_index {
+	height:auto;
+	border:#000 1px solid;
+	margin-bottom:12px;
+}
+
+#top_index a{
+	color:#000;
+	text-decoration:none;
+}
+
+#main_content {
+	height:auto;
+}
+	
+#title{
+	margin-top:8px;
+	margin-bottom:8px;
+	font-size:31px;
+	text-align:center;
+	font-family:"楷体", "宋体";
+}
